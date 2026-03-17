@@ -31,7 +31,7 @@ function HeroSection() {
       id="home"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-black/90" />
-      <div className="relative mt-5 mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-5 px-6 py-10 lg:flex-row lg:items-center lg:justify-between lg:gap-24 w-full">
+      <div className="relative mt-5 mx-auto flex min-h-[90vh] max-w-6xl flex-col-reverse items-center justify-center gap-5 px-6 py-10 lg:flex-row lg:items-center lg:justify-between lg:gap-24 w-full">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
@@ -53,7 +53,7 @@ function HeroSection() {
               Ready to take your future into your own hands?
             </span>{' '} <br />
             Dive into the proven process for reaching the peak of personal and
-            financial freedom with the Warrior Academy.
+            financial freedom with the Coach Academy.
           </motion.p>
 
           <motion.button
@@ -74,11 +74,11 @@ function HeroSection() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="relative flex w-full max-w-sm items-center justify-center lg:max-w-md"
         >
-          <div className="absolute inset-0 -z-10 rounded-3xl bg-gradient-to-br from-red-600/20 via-black/30 to-black/80 blur-3xl" />
+          <div className="absolute inset-0 -z-10 rounded-3xl bg-gradient-to-br from-red-600/20 via-black/30 to-black/80 blur-3xl max-sm:mt-20!" />
           <img
             className="relative max-sm:w-[220px] w-[320px] max-w-full rounded-3xl shadow-[0_24px_80px_-20px_rgba(0,0,0,0.6)]"
             src={heroImg}
-            alt="Warrior Academy logo"
+            alt="JV Academy logo"
           />
         </motion.div>
       </div>
