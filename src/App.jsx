@@ -40,7 +40,7 @@ function HeroSection() {
         >
           <h1 className="text-xl font-semibold leading-tight tracking-tight sm:text-3xl p-4 rounded-lg">
             <span className="block text-white text-5xl max-md:text-4xl max-sm:text-3xl">JV Mastery Program</span>
-            <span className="block text-2xl text-red-500 max-sm:text-lg max-sm:mt-2">Coach Jv Academy</span>
+            <span className="block text-2xl text-red-500! max-sm:text-lg max-sm:mt-2">Coach Jv Academy</span>
           </h1>
 
           <motion.p
