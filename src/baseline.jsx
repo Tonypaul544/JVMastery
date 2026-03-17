@@ -4,15 +4,15 @@ import thesun from './assets/thesun.png'
 
 export default function Baseline() {
     return (
-      <div className="baseline flex flex-col gap-6 max-sm:my-2 my-10 mx-10 px-20 max-sm:w-100 max-sm:px-2 items-center justify-center m-auto my-10 py-10 px-5 h-auto bg-gray-600/15 rounded-2xl">
-        <p className='text-white max-sm:text-[22px] max-sm:m-auto text-3xl font-bold text-center flex items-center m-auto max-sm:w-95'>Take Control of Your Future with Coach JV Academy</p>
-        <div className="list flex gap-2 wrap justify-between items-center m-auto w-[100%] px-5 h-auto max-sm:h-auto max-sm:flex-wrap max-sm:my-7">
-          <img src={yahoo} alt="" className="logo logo w-[100px] h-20" />
-          <img src={digitaljournal} alt="" className="logo logo w-[150px] h-20" />
-          <img src={thesun} alt="" className="logo logo w-[150px] h-10" />
-          <img src={digitaljournal} alt="" className="logo logo w-[150px] h-20" />
-          <img src={yahoo} alt="" className="logo logo w-[150px] h-20" />
-          <img src={thesun} alt="" className="logo logo w-[150px] h-10" />
+      <div className="baseline flex flex-col gap-6 max-sm:my-2 my-10 mx-auto px-4 sm:px-8 md:px-20 items-center justify-center py-10 h-auto bg-gray-600/15 rounded-2xl max-w-7xl w-full">
+        <p className='text-white max-sm:text-[22px] text-3xl font-bold text-center'>Take Control of Your Future with Coach JV Academy</p>
+        <div className="list flex gap-2 flex-wrap justify-center items-center w-full px-5 h-auto max-sm:flex-wrap">
+          <img src={yahoo} alt="" className="logo w-[80px] sm:w-[100px] h-16 sm:h-20" />
+          <img src={digitaljournal} alt="" className="logo w-[120px] sm:w-[150px] h-16 sm:h-20" />
+          <img src={thesun} alt="" className="logo w-[120px] sm:w-[150px] h-8 sm:h-10" />
+          <img src={digitaljournal} alt="" className="logo w-[120px] sm:w-[150px] h-16 sm:h-20" />
+          <img src={yahoo} alt="" className="logo w-[80px] sm:w-[100px] h-16 sm:h-20" />
+          <img src={thesun} alt="" className="logo w-[120px] sm:w-[150px] h-8 sm:h-10" />
         </div>
       </div>
     )

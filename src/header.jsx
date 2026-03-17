@@ -17,10 +17,10 @@ export default function Header() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className=""
+      className="fixed top-0 left-0 right-0 z-50 m-auto w-[100vw]"
     >
       {/* <div className="max-w-6xll items-center justify-center mx-auto px-6 py-4 bg-red-500"> */}
-        <div className="flex items-center bg-[#070a11]/95 backdrop-blur-lg border-b border-white/10 justify-between m-auto max-sm:px-4 max-sm:py-3 max-sm:mx-2 rounded-lg max-h-15 max-sm:max-h-12 fixed top-0 left-0 right-0 z-50 px-6 py-4">
+        <div className="flex items-center bg-[#070a11]/80 backdrop-blur-lg border-b border-white/10 justify-between m-auto max-sm:px-4 max-sm:py-3 max-sm:mx-2 rounded-lg max-h-15 max-sm:max-h-12 px-6 py-4">
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -70,9 +70,9 @@ export default function Header() {
           initial={false}
           animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
           transition={{ duration: 0.3 }}
-          className="md:hidden overflow-hidden"
+          className="md:hidden overflow-hidden fixed top-[30px] left-0 right-0 z-40 bg-[#070a11]/80 backdrop-blur-lg border-b border-white/10 max-sm:mx-2 rounded-b-lg"
         >
-          <div className="py-4 space-y-4">
+          <div className="py-4 space-y-4 flex flex-col items-center">
             {navItems.map((item, index) => (
               <motion.a
                 key={item.name}
@@ -81,7 +81,7 @@ export default function Header() {
                 animate={{ opacity: isOpen ? 1 : 0, x: isOpen ? 0 : -20 }}
                 transition={{ delay: index * 0.1, duration: 0.3 }}
                 onClick={() => setIsOpen(false)}
-                className="block text-white hover:text-red-500 transition-colors duration-300"
+                className="block text-white hover:text-red-500 transition-colors duration-300 text-center w-full py-2 px-4 rounded-md hover:bg-white/10"
               >
                 {item.name}
               </motion.a>

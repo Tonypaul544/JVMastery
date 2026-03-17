@@ -3,7 +3,7 @@ import './App.css'
 import Baseline from './baseline'
 import Freedom from './freedom'
 import Header from './header'
-import { motion, useInView } from 'framer-motion'
+import { motion, useInView } from 'framer-motion' // eslint-disable-line no-unused-vars
 import { useRef } from 'react'
 
 export default function App() {
@@ -31,16 +31,16 @@ function HeroSection() {
       id="home"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-black/90" />
-      <div className="relative max-sm:w-100 mt-5 max-sm:flex-col-reverse max-sm:w-auto max-sm:w-50 mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-5 px-6 py-10 lg:flex-row lg:items-center lg:justify-between lg:gap-24">
+      <div className="relative mt-5 mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-5 px-6 py-10 lg:flex-row lg:items-center lg:justify-between lg:gap-24 w-full">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-xl text-white text-center lg:text-left"
+          className="max-w-xl text-white text-center lg:text-left w-full"
         >
-          <h1 className="text-xl font-semibold leading-tight tracking-tight sm:text-3xl w-full p-4 rounded-lg">
-            <span className="block text-white text-5xl max-sm:text-4xl">JV Mastery Program</span>
-            <span className="block text-2xl max-sm:text-red-500! text-red-500 max-sm:text-md  max-sm:mt-2">Coach Jv Academy</span>
+          <h1 className="text-xl font-semibold leading-tight tracking-tight sm:text-3xl p-4 rounded-lg">
+            <span className="block text-white text-5xl max-md:text-4xl max-sm:text-3xl">JV Mastery Program</span>
+            <span className="block text-2xl text-red-500 max-sm:text-lg max-sm:mt-2">Coach Jv Academy</span>
           </h1>
 
           <motion.p
