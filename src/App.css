@@ -1,0 +1,18 @@
+.hero-bg {
+  background-image: radial-gradient(
+      circle at top,
+      rgba(239, 68, 68, 0.22),
+      transparent 55%
+    ),
+    radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.97));
+}
+
+/* Ensure the root layout doesn't overflow when using full-screen hero */
+html,
+body {
+  height: 100%;
+}
+
+* {
+  color: #fff;
+}
