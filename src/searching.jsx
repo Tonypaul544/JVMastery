@@ -21,7 +21,7 @@ export default function Searching() {
         <h1 className="">Daily livestreams with Coach JV</h1>
         <p className="">Engage with our leaders and fellow members during live interactive training events & workshops.</p>
         <br />
-        <img src={jvlive} alt="Coach JV's Portfolio" className="w-150 h-100 mt-[-50px]" />
+        <img src={jvlive} alt="Coach JV's Portfolio" className="w-150 h-70 lg:h-90 mt-[-50px]" />
       </div>
       <motion.button className="flex button bg-[#9F0000] hover:bg-red-600 text-white font-bold py-2 px-4 rounded m-auto! justify-center! w-[90%] mt-10! mx-auto items-center" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
         Get Started Now!
