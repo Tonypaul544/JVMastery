@@ -5,6 +5,13 @@ import Freedom from './freedom'
 import Header from './header'
 import { motion, useInView } from 'framer-motion' // eslint-disable-line no-unused-vars
 import { useRef } from 'react'
+import Searching from './searching'
+import PhaseOne from './phaseone'
+import PhaseTwo from './phasetwo'
+import PhaseThree from './phase3'
+import PhaseFour from './phase4'
+import PhaseFive from './phase5'
+import Opinion from './opinion'
 
 export default function App() {
   return (
@@ -13,6 +20,13 @@ export default function App() {
       <HeroSection />
       <BaselineSection />
       <FreedomSection />
+      <SearchingSection />
+      <PhaseOneSection />
+      <PhaseTwoSection />
+      <PhaseThreeSection />
+      <PhaseFourSection />
+      <PhaseFiveSection />
+      <OpinionSection />
     </main>
   )
 }
@@ -116,6 +130,123 @@ function FreedomSection() {
       id="about"
     >
       <Freedom />
+    </motion.div>
+  )
+}
+
+function SearchingSection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <Searching />
+    </motion.div>
+  )
+}
+
+function PhaseOneSection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      id="phase1"
+    >
+      <PhaseOne />
+    </motion.div>
+  )
+}
+
+function PhaseTwoSection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      id="phase2"
+    >
+      <PhaseTwo />
+    </motion.div>
+  )
+}
+
+function PhaseThreeSection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      id="phase3"
+    >
+      <PhaseThree />
+    </motion.div>
+  )
+}
+
+function PhaseFourSection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      id="phase4"
+    >
+      <PhaseFour />
+    </motion.div>
+  )
+}
+
+function PhaseFiveSection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      id="phase5"
+    >
+      <PhaseFive />
+    </motion.div>
+  )
+}
+
+function OpinionSection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <Opinion />
     </motion.div>
   )
 }
