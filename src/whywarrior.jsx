@@ -44,7 +44,7 @@ export default function whyWarrior() {
           initial={{ opacity: 0, x: -35 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -35 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex w-full gap-5 mt-5 justify-center max-md:flex-col"
+          className="flex w-full gap-5 mt-5 justify-center max-md:flex-col max-md:flex-col-reverse"
         >
           <ul className="list-disc pl-6 space-y-2 text-gray-800 min-w-[50%] max-w-4xl m-auto bg-gray-600/20 w-[100%] h-[300px] itens-center flex flex-col justify-center rounded-2xl mb-5 !px-8">
             <li
@@ -64,15 +64,15 @@ export default function whyWarrior() {
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
             transition={{ duration: 0.8, delay: 0.45 }}
-            className="flex w-full justify-center max-w-[50%] max-w-4xl m-auto p-4"
+            className="flex w-full justify-center w-[50%] max-w-4xl m-auto p-4"
           >
             <motion.img
               src={Protection}
               alt="financial Protection symbol"
-              className='w-[100%] h-[300px] max-h-[300px] rounded-2xl'
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: 0.5 }}
+              className='w-[100%] h-[300px] max-h-[300px] rounded-2xl max-md:w-[100%] max-md:h-auto'
             />
           </motion.div>
        </motion.div>
