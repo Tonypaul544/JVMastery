@@ -5,7 +5,7 @@ import phase1img from './assets/phase1.png'
 
 export default function PhaseOne() {
     const ref = useRef(null)
-    const isInView = useInView(ref, { once: true, margin: "-100px" })
+    const isInView = useInView(ref, { once: false, margin: "-100px" })
     return (
       <div ref={ref} className="discovery flex flex-col gap-6 my-10 mx-auto px-4 sm:px-8 md:px-20 items-center justify-center py-10 h-auto bg-gray-[#010101] rounded-2xl max-w-7xl w-full">
         <p className='text-white max-sm:text-[22px] text-4xl font-bold text-center text-[#CC0000]!'>Discover the roadmap to holistic financial success</p>

@@ -12,6 +12,7 @@ import PhaseThree from './phase3'
 import PhaseFour from './phase4'
 import PhaseFive from './phase5'
 import Opinion from './opinion'
+import WhyWarrior from './whywarrior'
 
 export default function App() {
   return (
@@ -27,13 +28,14 @@ export default function App() {
       <PhaseFourSection />
       <PhaseFiveSection />
       <OpinionSection />
+      <WhyWarriorSection />
     </main>
   )
 }
 
 function HeroSection() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const isInView = useInView(ref, { once: false, margin: "-100px" })
 
   return (
     <motion.section
@@ -140,6 +142,7 @@ function SearchingSection() {
 
   return (
     <motion.div
+      id="contact"
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
@@ -241,12 +244,29 @@ function OpinionSection() {
 
   return (
     <motion.div
+      id="testimonials"
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <Opinion />
+    </motion.div>
+  )
+}
+
+function WhyWarriorSection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  return (
+    <motion.div
+      id="warrior"
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <WhyWarrior />
     </motion.div>
   )
 }

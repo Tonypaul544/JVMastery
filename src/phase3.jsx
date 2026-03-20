@@ -6,7 +6,7 @@ import phase4img from './assets/phase3.webp'
 
 export default function PhaseThree() {
     const ref = useRef(null)
-    const isInView = useInView(ref, { once: true, margin: "-100px" })
+    const isInView = useInView(ref, { once: false, margin: "-100px" })
     return (
       <div ref={ref} className="discovery flex flex-col gap-6 my-10 mx-auto px-4 sm:px-8 md:px-20 items-center justify-center py-3 h-auto bg-gray-[#010101] rounded-2xl max-w-7xl w-full">
 

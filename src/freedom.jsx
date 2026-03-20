@@ -3,7 +3,7 @@ import { useRef } from 'react'
 
 export default function Freedom() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const isInView = useInView(ref, { once: false, margin: "-100px" })
 
   return (
     <div ref={ref} className="flex flex-col rounded-2xl my-10 mx-auto px-4 sm:px-8 md:px-20 py-10 items-center justify-center max-w-7xl w-full">

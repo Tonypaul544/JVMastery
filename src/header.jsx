@@ -9,8 +9,19 @@ export default function Header() {
     { name: 'Home', href: '#home' },
     { name: 'Program', href: '#program' },
     { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Contact', href: '#contact' },
+    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Warrior', href: '#warrior' }
   ];
+
+  const scrollToSection = (event, hash) => {
+    event.preventDefault();
+    const target = document.querySelector(hash);
+    if (!target) return;
+
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setIsOpen(false);
+  };
 
   return (
     <motion.header
@@ -42,6 +53,7 @@ export default function Header() {
               <motion.a
                 key={item.name}
                 href={item.href}
+                onClick={(event) => scrollToSection(event, item.href)}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.05 + index * 0.1, duration: 0.2 }}
@@ -80,7 +92,7 @@ export default function Header() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: isOpen ? 1 : 0, x: isOpen ? 0 : -20 }}
                 transition={{ delay: index * 0.1, duration: 0.3 }}
-                onClick={() => setIsOpen(false)}
+                onClick={(event) => scrollToSection(event, item.href)}
                 className="block text-white hover:text-red-500 transition-colors duration-300 text-center w-full py-2 px-4 rounded-md hover:bg-white/10"
               >
                 {item.name}

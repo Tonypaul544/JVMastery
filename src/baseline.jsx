@@ -6,7 +6,7 @@ import { useRef } from 'react'
 
 export default function Baseline() {
     const ref = useRef(null)
-    const isInView = useInView(ref, { once: true, margin: "-100px" })
+    const isInView = useInView(ref, { once: false, margin: "-100px" })
 
     return (
       <div ref={ref} className="baseline flex flex-col gap-6 max-sm:my-2 my-10 mx-auto px-4 sm:px-8 md:px-20 items-center justify-center py-10 h-auto bg-[#010101] rounded-2xl max-w-7xl w-full">
