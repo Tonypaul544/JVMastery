@@ -1,8 +1,8 @@
 
 import { motion, useInView } from 'framer-motion' // eslint-disable-line no-unused-vars
 import { useRef } from 'react'
-import Protection from './assets/protection.png'
-import TaxMitigation from './taxMitigation.jsx'
+import MitigationIMG from './assets/mitigation.png'
+// import TaxMitigation from './taxMitigation'
 
 export default function whyWarrior() {
   const ref = useRef(null)
@@ -22,10 +22,10 @@ export default function whyWarrior() {
         className="why-warrior flex flex-col gap-6 mx-auto px-4 sm:px-8 md:px-20 items-center justify-center py-3 h-auto bg-[#070A11] rounded-2xl max-w-7xl w-full py-2"
       >
         <h1 className="!text-[#CC0000] text-3xl font-bold text-center">
-          Why Become a Financial Warrior ?
+          Tax Mitigation Strategies
         </h1>
         <p className="text-gray-300 text-lg text-center max-w-4xl">
-          Digital assets have great opportunities but alongside these opportunities comes with important responsibilities related to taxation, custody, security, and long-term asset protection. <br />Many digital asset holders focus heavily on portfolio growth while overlooking the systems required to preserve that wealth. At 3T warrior Academy, we give great attention to these two things making sure our partners get great security protection while also earning passive income.
+          Tax mitigation refers to the process of legally reducing tax liabilities through strategic planning and informed decision-making. For digital asset holders, taxes can arise from a variety of activities including trading, selling, swapping tokens, staking rewards, and withdrawals Because digital asset markets move quickly and transactions often occur across multiple platforms, investors can unknowingly create significant taxable events. Without a clear strategy, taxes can substantially reduce overall portfolio returns.
         </p>
         <p className="text-gray-300 text-lg text-center max-w-4xl">
           The goal is to help investors move beyond simply acquiring digital assets to thinking of security for both their long term and short term holdings. Whether you hold a small portfolio or a more substantial allocation we are here for you
@@ -73,8 +73,8 @@ export default function whyWarrior() {
             className="flex w-full justify-center w-[50%] !m-auto h-[400px] itens-center flex flex-col justify-center rounded-2xl mt-[20px]"
           >
             <motion.img
-              src={Protection}
-              alt="financial Protection symbol"
+              src={MitigationIMG}
+              alt="tax Mitigation symbol"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: 0.5 }}
@@ -83,7 +83,7 @@ export default function whyWarrior() {
           </motion.div>
        </motion.div>
       </motion.div>
-    <TaxMitigation />
+    {/* <TaxMitigation /> */}
   </motion.div>
   )
 }

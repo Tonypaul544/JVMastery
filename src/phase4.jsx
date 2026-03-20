@@ -49,7 +49,7 @@ export default function PhaseFour() {
                 animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                 transition={{ duration: 0.8, delay: 1.0 }}
               >
-                Identify Income & Expenses
+                Discover Investment Avenues & Strategies
               </motion.li>
               <motion.li
                 className='font-semibold'
@@ -57,7 +57,7 @@ export default function PhaseFour() {
                 animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                 transition={{ duration: 0.8, delay: 1.2 }}
               >
-                Inventory & organize current debt and non-negotiables
+                Learn to research and find the best opportunities
               </motion.li>
               <motion.li
                 className='font-semibold'
@@ -65,7 +65,7 @@ export default function PhaseFour() {
                 animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                 transition={{ duration: 0.8, delay: 1.4 }}
               >
-                Learn to budget effectively and optimize for growth.
+                Master the skills of entrepreneurship.
               </motion.li>
             </ul>
           </motion.div>

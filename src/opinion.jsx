@@ -2,7 +2,7 @@ import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 
 import pfp1 from "./assets/pfp1.jpg"
-import pfp4 from "./assets/pfp4.jpg"
+import pfp4 from "./assets/pfp4.png"
 import pfp3 from "./assets/pfp3.jpg"
 import pfp5 from "./assets/pfp5.jpg"
 
@@ -44,7 +44,7 @@ export default function Opinion() {
 
         {/* Card 1 */}
         <motion.div
-          className="flex flex-col w-[400px] h-[430px] gap-4 items-center justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md"
+          className="w-[300px] h-auto max-h-[5000px] gap-4 justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md flex flex-col items-center"
           initial={{ opacity: 0, y: 60 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -52,7 +52,7 @@ export default function Opinion() {
           <motion.img
             src={pfp1}
             alt="Logan Mitchell"
-            className="w-48 h-48 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
+            className="!w-50 !h-40 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.6, delay: 0.7 }}
@@ -75,9 +75,11 @@ export default function Opinion() {
           </motion.p>
         </motion.div>
 
+
+
         {/* Card 2 */}
         <motion.div
-          className="flex flex-col w-[400px] h-[430px] gap-4 items-center justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md"
+          className="w-[300px] h-auto max-h-[5000px] gap-4 justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md flex flex-col items-center"
           initial={{ opacity: 0, y: 60 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
           transition={{ duration: 0.8, delay: 0.8 }}
@@ -85,7 +87,7 @@ export default function Opinion() {
           <motion.img
             src={pfp4}
             alt="Chloe Bennett"
-            className="w-48 h-48 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
+            className="!w-50 !h-40 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.6, delay: 0.9 }}
@@ -108,9 +110,51 @@ export default function Opinion() {
           </motion.p>
         </motion.div>
 
+
+
+        
+        {/* Card 1 */}
+        <motion.div
+          className="w-[300px] h-auto max-h-[5000px] gap-4 justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md flex flex-col items-center"
+          initial={{ opacity: 0, y: 60 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <motion.img
+            src={pfp3}
+            alt="Logan Mitchell"
+            className="!w-50 !h-40 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+          />
+          <motion.h2
+            className="!text-3xl !font-bold !text-[#CC0000]"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+          >
+            Logan Mitchell
+          </motion.h2>
+          <motion.p
+            className="text-gray-300 text-lg max-w-lg"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.6, delay: 0.9 }}
+          >
+            "I wholeheartedly support this academy and am sharing it with those who are ready to explore a place of healing. You will change the world and make planet Earth a place of love and connection over the long term."
+          </motion.p>
+        </motion.div>
+
+
+
+        {/* Card 2 */}
+
+
+
         {/* Card 3 */}
         <motion.div
-          className="flex flex-col w-[400px] h-[430px] gap-4 items-center justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md"
+          className="w-[300px] h-auto max-h-[5000px] gap-4 justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md flex flex-col items-center"
           initial={{ opacity: 0, y: 60 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
           transition={{ duration: 0.8, delay: 1.0 }}
@@ -118,7 +162,7 @@ export default function Opinion() {
           <motion.img
             src={pfp3}
             alt="Dylan Parker"
-            className="w-48 h-48 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
+            className="!w-50 !h-40 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.6, delay: 1.1 }}
@@ -143,7 +187,7 @@ export default function Opinion() {
 
         {/* Card 4 */}
         <motion.div
-          className="flex flex-col w-[400px] h-[430px] gap-4 items-center justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md"
+          className="w-[300px] h-auto max-h-[5000px] gap-4 justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md flex flex-col items-center"
           initial={{ opacity: 0, y: 60 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
           transition={{ duration: 0.8, delay: 1.2 }}
@@ -151,7 +195,7 @@ export default function Opinion() {
           <motion.img
             src={pfp5}
             alt="Owen Carter"
-            className="w-48 h-48 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
+            className="!w-50 !h-40 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.6, delay: 1.3 }}
