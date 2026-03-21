@@ -3,6 +3,9 @@ import { motion, useInView } from 'framer-motion' // eslint-disable-line no-unus
 import { useRef } from 'react'
 import Protection from './assets/protection.png'
 import TaxMitigation from './taxMitigation.jsx'
+import AssetProtection from './assetProtection.jsx'
+import DirectQuantum from './directQuantum.jsx'
+import StakingSecurity from './stakingSecurity.jsx'
 
 export default function whyWarrior() {
   const ref = useRef(null)
@@ -84,6 +87,9 @@ export default function whyWarrior() {
        </motion.div>
       </motion.div>
     <TaxMitigation />
+    <AssetProtection />
+    <DirectQuantum />
+    <StakingSecurity />
   </motion.div>
   )
 }

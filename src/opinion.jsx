@@ -44,180 +44,244 @@ export default function Opinion() {
 
         {/* Card 1 */}
         <motion.div
-          className="w-[300px] h-auto max-h-[5000px] gap-4 justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md flex flex-col items-center"
-          initial={{ opacity: 0, y: 60 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+        className="
+          w-full max-w-sm
+          bg-gray-500/15
+          p-6 sm:p-7
+          rounded-xl
+          flex flex-col items-center
+          text-center
+          gap-5
+          mx-auto
+        "
+        initial={{ opacity: 0, y: 60 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+      >
+
+        {/* IMAGE */}
+        <motion.img
+          src={pfp1}
+          alt="Logan Mitchell"
+          className="
+            w-28 h-28
+            sm:w-32 sm:h-32
+            md:w-36 md:h-36
+            rounded-full
+            object-cover
+          "
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+        />
+
+        {/* NAME */}
+        <motion.h2
+          className="text-2xl sm:text-3xl font-bold !text-[#CC0000]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <motion.img
-            src={pfp1}
-            alt="Logan Mitchell"
-            className="!w-50 !h-40 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-          />
-          <motion.h2
-            className="!text-3xl !font-bold !text-[#CC0000]"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-          >
-            Logan Mitchell
-          </motion.h2>
-          <motion.p
-            className="text-gray-300 text-lg max-w-lg"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 0.9 }}
-          >
-            "I wholeheartedly support this academy and am sharing it with those who are ready to explore a place of healing. You will change the world and make planet Earth a place of love and connection over the long term."
-          </motion.p>
-        </motion.div>
+          Logan Mitchell
+        </motion.h2>
+
+        {/* TEXT */}
+        <motion.p
+          className="
+            text-gray-300
+            text-base sm:text-lg
+            leading-relaxed
+          "
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+        >
+          What I found most valuable in the 3T Warrior Academy is I get to meet new friends all over this world. that have similar stories and was able to rise and not give up. 
+        </motion.p>
+
+      </motion.div>
 
 
 
         {/* Card 2 */}
         <motion.div
-          className="w-[300px] h-auto max-h-[5000px] gap-4 justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md flex flex-col items-center"
-          initial={{ opacity: 0, y: 60 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-        >
-          <motion.img
-            src={pfp4}
-            alt="Chloe Bennett"
-            className="!w-50 !h-40 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.6, delay: 0.9 }}
-          />
-          <motion.h2
-            className="!text-3xl !font-bold !text-[#CC0000]"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 1.0 }}
-          >
-            Chloe Bennett
-          </motion.h2>
-          <motion.p
-            className="text-gray-300 text-lg max-w-lg"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 1.1 }}
-          >
-            "Joining the #3TWarriorAcademy and the 120 Day Challenge has been one of the best decisions I've made. CJV, I can't thank you enough for changing my life and being such an inspiration to all of us."
-          </motion.p>
-        </motion.div>
-
-
-
-        
-        {/* Card 1 */}
-        <motion.div
-          className="w-[300px] h-auto max-h-[5000px] gap-4 justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md flex flex-col items-center"
+          className="
+            w-full max-w-sm
+            bg-gray-500/15
+            p-6 sm:p-7
+            rounded-xl
+            flex flex-col items-center
+            text-center
+            gap-5
+            mx-auto
+          "
           initial={{ opacity: 0, y: 60 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
           transition={{ duration: 0.8, delay: 0.6 }}
+         >
+
+        {/* IMAGE */}
+        <motion.img
+          src={pfp3}
+          alt="Logan Mitchell"
+          className="
+            w-28 h-28
+            sm:w-32 sm:h-32
+            md:w-36 md:h-36
+            rounded-full
+            object-cover
+          "
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+        />
+
+        {/* NAME */}
+        <motion.h2
+          className="text-2xl sm:text-3xl font-bold !text-[#CC0000]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <motion.img
-            src={pfp3}
-            alt="Logan Mitchell"
-            className="!w-50 !h-40 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-          />
-          <motion.h2
-            className="!text-3xl !font-bold !text-[#CC0000]"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-          >
-            Logan Mitchell
-          </motion.h2>
-          <motion.p
-            className="text-gray-300 text-lg max-w-lg"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 0.9 }}
-          >
-            "I wholeheartedly support this academy and am sharing it with those who are ready to explore a place of healing. You will change the world and make planet Earth a place of love and connection over the long term."
-          </motion.p>
-        </motion.div>
+          Logan Mitchell
+        </motion.h2>
 
+        {/* TEXT */}
+        <motion.p
+          className="
+            text-gray-300
+            text-base sm:text-lg
+            leading-relaxed
+          "
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+        >
+          The academy has shown us so much, to empower ourselves, think logically and grow into the people we always wanted to be. Strength comes from within. We are warriors! Thank you cjv and team, the work you are doing is changing lives!
+        </motion.p>
 
-
-        {/* Card 2 */}
+      </motion.div>
 
 
 
         {/* Card 3 */}
-        <motion.div
-          className="w-[300px] h-auto max-h-[5000px] gap-4 justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md flex flex-col items-center"
-          initial={{ opacity: 0, y: 60 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
-          transition={{ duration: 0.8, delay: 1.0 }}
+      <motion.div
+        className="
+          w-full max-w-sm
+          bg-gray-500/15
+          p-6 sm:p-7
+          rounded-xl
+          flex flex-col items-center
+          text-center
+          gap-5
+          mx-auto
+        "
+        initial={{ opacity: 0, y: 60 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+      >
+
+        {/* IMAGE */}
+        <motion.img
+          src={pfp4}
+          alt="Logan Mitchell"
+          className="
+            w-28 h-28
+            sm:w-32 sm:h-32
+            md:w-36 md:h-36
+            rounded-full
+            object-cover
+          "
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+        />
+
+        {/* NAME */}
+        <motion.h2
+          className="text-2xl sm:text-3xl font-bold !text-[#CC0000]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <motion.img
-            src={pfp3}
-            alt="Dylan Parker"
-            className="!w-50 !h-40 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.6, delay: 1.1 }}
-          />
-          <motion.h2
-            className="!text-3xl font-bold !text-[#CC0000]"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-          >
-            Dylan Parker
-          </motion.h2>
-          <motion.p
-            className="text-gray-300 text-lg max-w-lg"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 1.3 }}
-          >
-            "What I find most valuable in the 3T Warrior Academy is I get to meet new friends all over this world. that have similar stories and was able to rise and not give up."
-          </motion.p>
-        </motion.div>
+          Logan Mitchell
+        </motion.h2>
+
+        {/* TEXT */}
+        <motion.p
+          className="
+            text-gray-300
+            text-base sm:text-lg
+            leading-relaxed
+          "
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+        >
+          Joining the #3TWarriorAcademy and the 120 Day Challenge has been one of the best decisions I've made. CJV, I can't thank you enough for changing my life and being such an inspiration to all of us. 
+        </motion.p>
+
+      </motion.div>
+
 
         {/* Card 4 */}
         <motion.div
-          className="w-[300px] h-auto max-h-[5000px] gap-4 justify-center text-center bg-gray-500/15 p-5 rounded-lg max-w-md flex flex-col items-center"
-          initial={{ opacity: 0, y: 60 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-        >
-          <motion.img
-            src={pfp5}
-            alt="Owen Carter"
-            className="!w-50 !h-40 rounded-full object-cover max-md:w-[200px] max-md:h-[200px]"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.6, delay: 1.3 }}
-          />
-          <motion.h2
-            className="!text-3xl font-bold !text-[#CC0000]"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 1.4 }}
-          >
-            Owen Carter
-          </motion.h2>
-          <motion.p
-            className="text-gray-300 text-lg max-w-lg"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 1.5 }}
-          >
-            "What I find most valuable in the 3T Warrior Academy is I get to meet new friends all over this world. <br />that have similar stories and was able to rise and not give up. "
-          </motion.p>
-        </motion.div>
+        className="
+          w-full max-w-sm
+          bg-gray-500/15
+          p-6 sm:p-7
+          rounded-xl
+          flex flex-col items-center
+          text-center
+          gap-5
+          mx-auto
+        "
+        initial={{ opacity: 0, y: 60 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+      >
 
+        {/* IMAGE */}
+        <motion.img
+          src={pfp5}
+          alt="Logan Mitchell"
+          className="
+            w-28 h-28
+            sm:w-32 sm:h-32
+            md:w-36 md:h-36
+            rounded-full
+            object-cover
+          "
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+        />
+
+        {/* NAME */}
+        <motion.h2
+          className="text-2xl sm:text-3xl font-bold !text-[#CC0000]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+        >
+          Logan Mitchell
+        </motion.h2>
+
+        {/* TEXT */}
+        <motion.p
+          className="
+            text-gray-300
+            text-base sm:text-lg
+            leading-relaxed
+          "
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+        >
+          I wholeheartedly support this academy and am sharing it with those who are ready to explore a place of healing. You will change the world and make planet Earth a place of love and connection over the long term.
+        </motion.p>
+
+      </motion.div>
       </div>
     </div>
   )
