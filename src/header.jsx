@@ -1,5 +1,6 @@
 import { useState } from "react"
 import logo from "./assets/coachjvlogo.webp"
+import JvLogo from "./assets/jvlogo.png"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,10 +27,8 @@ export default function Header() {
 
           {/* LOGO */}
           <div className="flex items-center gap-2">
-            <img src={logo} alt="JV Mastery Logo" className="h-7" />
-            <span className="text-white font-bold text-xl">
-              JV Mastery
-            </span>
+            <img src={JvLogo} alt="JV Mastery Logo" className="h-10 w-auto" />
+            {/* <img src={ JvLogo} alt="3T Warrior Logo" className="w-full h-45" /> */}
           </div>
 
           {/* ===== DESKTOP NAV ===== */}

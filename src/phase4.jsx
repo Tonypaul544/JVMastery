@@ -10,7 +10,7 @@ export default function PhaseFour() {
     return (
       <div ref={ref} className="discovery flex flex-col gap-6 my-10 mx-auto px-4 sm:px-8 md:px-20 items-center justify-center py-3 h-auto bg-gray-[#010101] rounded-2xl max-w-7xl w-full">
 
-        <div className="flex w-[95vw] justify-center  max-md:flex-col-reverse gap-5 items-center flex-col lg:flex-row max-md:px-2!">
+        <div className="flex w-[95vw] justify-center  max-md:flex-col-reverse gap-5 items-center flex-col lg:flex-row max-md:px-2!" id='phase2'>
           
           <motion.div
             className="flex flex-col"
