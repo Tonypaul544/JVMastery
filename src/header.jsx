@@ -1,5 +1,5 @@
 import { useState } from "react"
-import logo from "./assets/coachjvlogo.webp"
+// import logo from "./assets/coachjvlogo.webp"
 import JvLogo from "./assets/jvlogo.png"
 
 export default function Header() {
@@ -10,8 +10,8 @@ export default function Header() {
     { name: "Program", href: "#program" },
     { name: "About", href: "#about" },
     { name: "Testimonials", href: "#testimonials" },
-    { name: "Contact", href: "#contact" },
     { name: "Warrior", href: "#warrior" },
+    { name: "Contact", href: "#contact" },
   ]
 
   return (

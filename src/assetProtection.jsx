@@ -9,6 +9,7 @@ export default function AssetProtection() {
   const isInView = useInView(ref, { once: false, margin: "-100px" })
   return (
     <motion.div
+      id='assetProtection'
       ref={ref}
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
@@ -20,6 +21,7 @@ export default function AssetProtection() {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.8, delay: 0.1 }}
         className="why-warrior flex flex-col gap-6 mx-auto px-4 sm:px-8 md:px-20 items-center justify-center py-3 h-auto bg-[#070A11] rounded-2xl max-w-7xl w-full py-2"
+        
       >
         <h1 className="!text-[#CC0000] text-3xl font-bold text-center">
           Digital Asset Protection

@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion'
 import JvLogo from './assets/jvlogo.png'
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaSquareWhatsapp } from "react-icons/fa6";
+import { SiGmail } from "react-icons/si";
+
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -23,15 +27,15 @@ export default function Footer() {
         { label: 'Why Warrior', href: '#whywarrior' }
       ] 
     },
-    { 
-      category: 'Support', 
-      links: [
-        { label: 'Contact Us', href: '#contact' },
-        { label: 'FAQ', href: '#faq' },
-        { label: 'Privacy Policy', href: '#privacy' },
-        { label: 'Terms of Service', href: '#terms' }
-      ] 
-    }
+    // { 
+    //   category: 'Support', 
+    //   links: [
+    //     { label: 'Contact Us', href: '#contact' },
+    //     { label: 'FAQ', href: '#faq' },
+    //     { label: 'Privacy Policy', href: '#privacy' },
+    //     { label: 'Terms of Service', href: '#terms' }
+    //   ] 
+    // }
   ]
 
   const containerVariants = {
@@ -54,7 +58,7 @@ export default function Footer() {
 
   return (
     <motion.footer
-      id='contact!'
+      id='contact'
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: '-100px' }}
@@ -65,7 +69,7 @@ export default function Footer() {
         {/* Top Section: Logo and Description */}
         <motion.div
           variants={itemVariants}
-          className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 pb-12"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 justify-between pb-12"
         >
           {/* Brand Section */}
           <div className="md:col-span-1">
@@ -80,21 +84,23 @@ export default function Footer() {
               Empowering financial warriors to achieve complete freedom through proven strategies and professional guidance.
             </p>
             <div className="flex gap-4 mt-6">
-              {['facebook', 'twitter', 'instagram', 'linkedin'].map((social) => (
+              {[
+                // { name: 'facebook', url: 'https://facebook.com', icon: '📘' },
+                { name: 'gmail', url: 'mailto:coachjvmastery@gmail.com', icon: <SiGmail /> },
+                { name: 'instagram', url: 'https://www.instagram.com/coachjv_mastery', icon: <FaSquareInstagram /> },
+                { name: 'whatsapp', url: 'http://wa.me/17272030987', icon: <FaSquareWhatsapp /> }
+              ].map((social) => (
                 <motion.a
-                  key={social}
-                  href={`https://${social}.com`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  key={social.name}
+                  href={social.url}
+                  target={social.url.startsWith('http') && !social.url.includes('wa.me') ? "_blank" : undefined}
+                  rel={social.url.startsWith('http') && !social.url.includes('wa.me') ? "noopener noreferrer" : undefined}
                   whileHover={{ scale: 1.2, color: '#EF4444' }}
                   whileTap={{ scale: 0.9 }}
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-red-600/30 transition-colors"
-                  aria-label={social}
+                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center !text-[#CC0000] hover:bg-[#8e0404] transition-colors"
+                  aria-label={social.name}
                 >
-                  {social === 'facebook' && '📘'}
-                  {social === 'twitter' && '𝕏'}
-                  {social === 'instagram' && '📷'}
-                  {social === 'linkedin' && '💼'}
+                  {social.icon}
                 </motion.a>
               ))}
             </div>
@@ -102,18 +108,19 @@ export default function Footer() {
 
           {/* Links Section */}
           {footerLinks.map((section) => (
-            <motion.div key={section.category} variants={itemVariants}>
+            <motion.div key={section.category} variants={itemVariants} className='flex flex-col gap-1 lg:ml-8'>
               <h4 className="text-white font-semibold text-lg mb-4">{section.category}</h4>
+
               <ul className="space-y-2">
                 {section.links.map((link) => (
                   <motion.li
                     key={link.label}
-                    whileHover={{ x: 4 }}
+                    whileHover={{ x: 4, color: '#CC0000' }}
                     transition={{ duration: 0.2 }}
                   >
                     <a
                       href={link.href}
-                      className="text-gray-400 hover:text-red-500 transition-colors text-sm"
+                      className="text-gray-400 hover:text-red-500 transition-colors text-sm !hover:text-[#CC0000]"
                     >
                       {link.label}
                     </a>

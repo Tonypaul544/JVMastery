@@ -6,6 +6,7 @@ import TaxMitigation from './taxMitigation.jsx'
 import AssetProtection from './assetProtection.jsx'
 import DirectQuantum from './directQuantum.jsx'
 import StakingSecurity from './stakingSecurity.jsx'
+// import header from './header.jsx'
 
 export default function whyWarrior() {
   const ref = useRef(null)
@@ -17,8 +18,10 @@ export default function whyWarrior() {
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       transition={{ duration: 0.9, ease: 'easeOut' }}
       className="flex flex-col w-full items-center justify-center gap-10 py-10"
+      id='whywarrior'
     >
       <motion.div
+      id='about'
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.8, delay: 0.1 }}

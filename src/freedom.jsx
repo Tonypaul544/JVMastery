@@ -11,7 +11,8 @@ export default function Freedom() {
         initial={{ opacity: 0, y: -30 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="text-xl font-bold text-center mt-10 text-[#CC0000]! max-sm:text-2xl!"
+        className="text-xl font-bold text-center mt-10 !text-[#CC0000] max-sm:text-2xl!"
+        id='program'
       >
         Your journey to financial freedom starts here.
       </motion.h1>
