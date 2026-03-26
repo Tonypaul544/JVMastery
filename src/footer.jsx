@@ -9,15 +9,15 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const footerLinks = [
-    { 
-      category: 'Program', 
-      links: [
-        { label: 'Home', href: '#home' },
-        { label: 'Phase 1', href: '#phase1' },
-        { label: 'Phase 2', href: '#phase2' },
-        { label: 'Phase 3', href: '#phase3' }
-      ] 
-    },
+    // { 
+    //   category: 'Program', 
+    //   links: [
+    //     { label: 'Home', href: '#home' },
+    //     { label: 'Phase 1', href: '#phase1' },
+    //     { label: 'Phase 2', href: '#phase2' },
+    //     { label: 'Phase 3', href: '#phase3' }
+    //   ] 
+    // },
     { 
       category: 'Learn', 
       links: [
@@ -27,15 +27,15 @@ export default function Footer() {
         { label: 'Why Warrior', href: '#whywarrior' }
       ] 
     },
-    // { 
-    //   category: 'Support', 
-    //   links: [
-    //     { label: 'Contact Us', href: '#contact' },
-    //     { label: 'FAQ', href: '#faq' },
-    //     { label: 'Privacy Policy', href: '#privacy' },
-    //     { label: 'Terms of Service', href: '#terms' }
-    //   ] 
-    // }
+    { 
+      category: 'Support', 
+      links: [
+        { label: 'Contact Us', href: '#contact' },
+        { label: 'FAQ', href: '#faq' },
+        { label: 'Privacy Policy', href: '#privacy' },
+        { label: 'Terms of Service', href: '#terms' }
+      ] 
+    }
   ]
 
   const containerVariants = {
@@ -69,7 +69,7 @@ export default function Footer() {
         {/* Top Section: Logo and Description */}
         <motion.div
           variants={itemVariants}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 justify-between pb-12"
+          className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-50 mb-12 justify-between pb-12"
         >
           {/* Brand Section */}
           <div className="md:col-span-1">
@@ -85,7 +85,6 @@ export default function Footer() {
             </p>
             <div className="flex gap-4 mt-6">
               {[
-                // { name: 'facebook', url: 'https://facebook.com', icon: '📘' },
                 { name: 'gmail', url: 'mailto:coachjvmastery@gmail.com', icon: <SiGmail /> },
                 { name: 'instagram', url: 'https://www.instagram.com/coachjv_mastery', icon: <FaSquareInstagram /> },
                 { name: 'whatsapp', url: 'http://wa.me/17272030987', icon: <FaSquareWhatsapp /> }
@@ -111,7 +110,7 @@ export default function Footer() {
             <motion.div key={section.category} variants={itemVariants} className='flex flex-col gap-1 lg:ml-8'>
               <h4 className="text-white font-semibold text-lg mb-4">{section.category}</h4>
 
-              <ul className="space-y-2">
+              <ul className="space-y-2 gap-5 flex flex-col">
                 {section.links.map((link) => (
                   <motion.li
                     key={link.label}
@@ -133,7 +132,7 @@ export default function Footer() {
 
         <motion.div
           variants={itemVariants}
-          className="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4"
+          className="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center"
         >
           <p className="text-gray-400 text-sm text-center sm:text-left">
             © {currentYear} JV Mastery Academy. All rights reserved.

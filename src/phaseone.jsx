@@ -27,7 +27,7 @@ export default function PhaseOne() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Phase 1: Strong Foundation
+              Strong Foundation
             </motion.h2>
             <motion.p
               className="text-gray-300 text-lg mb-4 max-w-lg lg:mb-5! max-md:text-center m-auto mb-5!"
@@ -37,14 +37,7 @@ export default function PhaseOne() {
             >
               In this phase, we lay the groundwork for your financial success. you'll learn to understand your mindset, tackle limiting beliefs, gain the confidence in yourself to make the right decisions, and find your passions & purpose.. The journey to success begins within and we're here to help you start on the right foot
             </motion.p>
-            <motion.h2
-              className="text-2xl! font-bold text-white mb-4 text-[#CC0000]!  max-md:text-center mt-5 max-md:mt-5! max-md:font-bolder!"
-              initial={{ opacity: 0, x: 50 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-            >
-              After this phase, you will:
-            </motion.h2>
+            
             <ul className="text-gray-300 text-lg max-w-lg mt-1 list-disc list-inside">
               <motion.li
                 className='font-semibold'

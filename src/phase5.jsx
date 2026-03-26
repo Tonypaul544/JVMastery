@@ -12,11 +12,11 @@ export default function PhaseFive() {
         <div className="flex w-[95vw] justify-center gap-5 items-center flex-col lg:flex-row max-md:px-2!">
           <img src={phase5img} alt="Discovery" className="w-full max-w-md h-auto" />
           <div className="flex flex-col">
-            <h2 className="text-3xl! font-bold text-white mb-4 text-[#CC0000]!  max-md:text-center! max-md:text-[25px]!">Phase 5: Wealth Protection</h2>
+            <h2 className="text-3xl! font-bold text-white mb-4 text-[#CC0000]!  max-md:text-center! max-md:text-[25px]!">Wealth Protection</h2>
             <p className="text-gray-300 text-lg mb-4 max-w-lg lg:mb-5! max-md:text-center m-auto mb-5!">
               Protecting your wealth is as important as building it. The Wealth Protection phase will educate you on how the wealthy protect their assets and structure their lives to create a legacy for future generations.
             </p>
-            <h2 className="text-2xl! font-bold text-white mb-4 text-[#CC0000]!  max-md:text-center mt-5 max-md:mt-5! max-md:font-bolder!">After this phase, you will:</h2>
+            
             <ul className="text-gray-300 text-lg max-w-lg mt-1 list-disc list-inside">
               <li className='font-semibold'>Discover ways to structure your assets to create legacy</li>
               <li className='font-semibold'>Mastering & Sharing this knowledge and literacy with the next generation</li>

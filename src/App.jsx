@@ -13,12 +13,14 @@ import PhaseFour from './phase4'
 import PhaseFive from './phase5'
 import Opinion from './opinion'
 import WhyWarrior from './whywarrior'
+import Signup from './signup'
 // import Contact from './contact'
 import Footer from './footer'
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-[#070a11] text-white">
+    <main className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white relative">
+      <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-transparent to-black/50 blur-3xl pointer-events-none"></div>
       <Header />
       <HeroSection />
       <BaselineSection />
@@ -30,6 +32,7 @@ export default function App() {
       <PhaseFiveSection />
       <OpinionSection />
       <WhyWarriorSection />
+      <SignupSection />
       {/* <ContactSection /> */}
       <Footer />
     </main>
@@ -75,7 +78,7 @@ function HeroSection() {
             financial freedom with the Coach Academy.
           </motion.p>
 
-          <motion.button
+          <motion.a href="#signup"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -84,7 +87,7 @@ function HeroSection() {
             className="mt-6 inline-flex items-center justify-center rounded-xl bg-[#BE0101] px-10 py-2 text-lg font-semibold shadow-lg shadow-red-600/40 transition hover:bg-red-700"
           >
             Sign Up Today
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         <motion.div
@@ -275,3 +278,11 @@ function WhyWarriorSection() {
 //     </motion.div>
 //   )
 // }
+
+function SignupSection() {
+  return (
+    <section id="signup" className="py-16 px-4 md:px-8 lg:px-20">
+      <Signup />
+    </section>
+  )
+}

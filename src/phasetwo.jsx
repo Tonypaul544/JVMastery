@@ -24,7 +24,7 @@ export default function PhaseTwo() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Phase 2: Strategic Implementation
+              Strategic Implementation
             </motion.h2>
             <motion.p
               className="text-gray-300 text-lg mb-4 max-w-lg  max-md:text-center m-auto mb-5!"
@@ -34,14 +34,7 @@ export default function PhaseTwo() {
             >
               Now that you have a solid foundation, it's time to put your knowledge into action. Learn proven strategies, develop multiple income streams, and master the art of wealth building through strategic planning and consistent execution.
             </motion.p>
-            <motion.h2
-              className="text-2xl! font-bold text-white mb-4 text-[#CC0000]!  max-md:text-center mt-5 max-md:mt-5! max-md:font-bolder!"
-              initial={{ opacity: 0, x: -50 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-            >
-              After this phase, you will:
-            </motion.h2>
+           
             <ul className="text-gray-300 text-lg max-w-lg mt-1 list-disc list-inside max-md:mt-1 max-md:px-1">
               <motion.li
                 className='font-semibold'

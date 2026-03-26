@@ -2,7 +2,13 @@
 @import "tailwindcss";
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 :root {

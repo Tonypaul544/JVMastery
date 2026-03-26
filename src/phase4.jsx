@@ -24,7 +24,7 @@ export default function PhaseFour() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Phase 4: Mastery & Growth
+              Mastery & Growth
             </motion.h2>
             <motion.p
               className="text-gray-300 text-lg mb-4 max-w-lg lg:mb-5! max-md:text-center m-auto mb-5!"
@@ -34,14 +34,7 @@ export default function PhaseFour() {
             >
               You've made significant progress, and now it's time to take your financial journey to the next level. In this phase, you'll learn advanced strategies for maximizing your income, building wealth, and creating sustainable financial systems.
             </motion.p>
-            <motion.h2
-              className="text-2xl! font-bold text-white mb-4 text-[#CC0000]!  max-md:text-center mt-5 max-md:mt-5! max-md:font-bolder!"
-              initial={{ opacity: 0, x: -50 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-            >
-              After this phase, you will:
-            </motion.h2>
+            
             <ul className="text-gray-300 text-lg max-w-lg mt-1 list-disc list-inside">
               <motion.li
                 className='font-semibold'
@@ -51,14 +44,14 @@ export default function PhaseFour() {
               >
                 Discover Investment Avenues & Strategies
               </motion.li>
-              <motion.li
+              {/* <motion.li
                 className='font-semibold'
                 initial={{ opacity: 0, x: -50 }}
                 animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                 transition={{ duration: 0.8, delay: 1.2 }}
               >
                 Learn to research and find the best opportunities
-              </motion.li>
+              </motion.li> */}
               <motion.li
                 className='font-semibold'
                 initial={{ opacity: 0, x: -50 }}

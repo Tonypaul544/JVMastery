@@ -15,6 +15,7 @@ export default function DirectQuantum() {
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       transition={{ duration: 0.9, ease: 'easeOut' }}
       className="flex flex-col w-full items-center justify-center gap-10 py-10"
+      id='security'
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}

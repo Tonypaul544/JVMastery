@@ -1,5 +1,4 @@
 import { useState } from "react"
-// import logo from "./assets/coachjvlogo.webp"
 import JvLogo from "./assets/jvlogo.png"
 
 export default function Header() {
@@ -7,7 +6,7 @@ export default function Header() {
 
   const navItems = [
     { name: "Home", href: "#home" },
-    { name: "Program", href: "#program" },
+    { name: "Program", href: "#security" },
     { name: "About", href: "#about" },
     { name: "Testimonials", href: "#testimonials" },
     { name: "Warrior", href: "#warrior" },
@@ -15,20 +14,22 @@ export default function Header() {
   ]
 
   return (
-    <header className="fixed mt-[-5px] left-0 right-0 z-50">
-
+    <header className="fixed top-0 left-0 right-0 z-[9999]">
       {/* ===== NAV BAR ===== */}
       <div className="mx-auto max-w-7xl px-4 sm:px-8 py-3">
-
-        <div className="flex items-center justify-between
-          bg-[#070a11]/80 backdrop-blur-lg
+        <div
+          className="flex items-center justify-between
+          bg-[#070a11]/90 backdrop-blur-lg
           border border-white/10 rounded-lg
-          px-6 py-3">
-
+          px-6 py-3 shadow-lg"
+        >
           {/* LOGO */}
           <div className="flex items-center gap-2">
-            <img src={JvLogo} alt="JV Mastery Logo" className="h-10 w-auto" />
-            {/* <img src={ JvLogo} alt="3T Warrior Logo" className="w-full h-45" /> */}
+            <img
+              src={JvLogo}
+              alt="JV Mastery Logo"
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* ===== DESKTOP NAV ===== */}
@@ -37,7 +38,7 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-white !hover:text-red-500 transition"
+                className="text-white hover:text-red-500 transition font-medium"
               >
                 {item.name}
               </a>
@@ -46,8 +47,10 @@ export default function Header() {
 
           {/* ===== MOBILE BUTTON ===== */}
           <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white text-2xl"
+            onClick={() => setIsOpen((prev) => !prev)}
+            className="md:hidden text-white text-2xl p-2"
+            aria-label="Toggle navigation menu"
+            type="button"
           >
             {isOpen ? "✕" : "☰"}
           </button>
@@ -57,24 +60,23 @@ export default function Header() {
       {/* ===== MOBILE MENU ===== */}
       {isOpen && (
         <nav className="md:hidden bg-[#070a11]/95 backdrop-blur-lg border-b border-white/10">
-
-          <div className="flex flex-col items-center py-6 gap-6">
-
+          <div className="flex flex-col items-end py-6 gap-6 pr-6">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                onClick={() => setIsOpen(false)}
-                className="text-white text-lg hover:text-red-500"
+                onClick={() => {
+                  // Slight delay prevents scroll cancellation on mobile
+                  setTimeout(() => setIsOpen(false), 120)
+                }}
+                className="block py-3 px-4 text-white text-lg hover:text-red-500 transition"
               >
                 {item.name}
               </a>
             ))}
-
           </div>
         </nav>
       )}
-
     </header>
   )
 }

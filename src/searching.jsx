@@ -97,13 +97,14 @@ export default function Searching() {
       </motion.div>
 
       {/* BUTTON */}
-      <motion.button
-        className="bg-[#9F0000] hover:bg-red-600 text-white font-bold py-2 px-4 rounded w-[90%] mt-10 mx-auto block"
+      <motion.a
+        href="#signup"
+        className="bg-[#9F0000] hover:bg-red-600 text-white font-bold py-2 px-4 rounded w-[90%] mt-10 mx-auto block text-center"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
         Get Started Now!
-      </motion.button>
+      </motion.a>
 
     </section>
   )
