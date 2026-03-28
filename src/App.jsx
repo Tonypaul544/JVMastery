@@ -4,8 +4,8 @@ import Baseline from './baseline'
 import Freedom from './freedom'
 import Header from './header'
 import { motion, useInView } from 'framer-motion' // eslint-disable-line no-unused-vars
-import { useRef } from 'react'
-import Searching from './searching'
+import { useRef, useEffect, useState } from 'react'
+// import Searching from './searching'
 import PhaseOne from './phaseone'
 import PhaseTwo from './phasetwo'
 import PhaseThree from './phase3'
@@ -13,11 +13,37 @@ import PhaseFour from './phase4'
 import PhaseFive from './phase5'
 import Opinion from './opinion'
 import WhyWarrior from './whywarrior'
-import Signup from './signup'
+import Auth from './Auth'
 // import Contact from './contact'
 import Footer from './footer'
 
 export default function App() {
+  const [currentPage, setCurrentPage] = useState('home')
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      const path = window.location.pathname
+      if (path.includes('/auth') || window.location.hash === '#auth') {
+        setCurrentPage('auth')
+      } else {
+        setCurrentPage('home')
+      }
+    }
+
+    handleRouteChange()
+    window.addEventListener('hashchange', handleRouteChange)
+    window.addEventListener('popstate', handleRouteChange)
+
+    return () => {
+      window.removeEventListener('hashchange', handleRouteChange)
+      window.removeEventListener('popstate', handleRouteChange)
+    }
+  }, [])
+
+  if (currentPage === 'auth') {
+    return <Auth />
+  }
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white relative">
       <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-transparent to-black/50 blur-3xl pointer-events-none"></div>
@@ -32,7 +58,6 @@ export default function App() {
       <PhaseFiveSection />
       <OpinionSection />
       <WhyWarriorSection />
-      <SignupSection />
       {/* <ContactSection /> */}
       <Footer />
     </main>
@@ -78,7 +103,7 @@ function HeroSection() {
             financial freedom with the Coach Academy.
           </motion.p>
 
-          <motion.a href="#signup"
+          <motion.a href="#auth"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -278,11 +303,3 @@ function WhyWarriorSection() {
 //     </motion.div>
 //   )
 // }
-
-function SignupSection() {
-  return (
-    <section id="signup" className="py-16 px-4 md:px-8 lg:px-20">
-      <Signup />
-    </section>
-  )
-}

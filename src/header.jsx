@@ -33,7 +33,7 @@ export default function Header() {
           </div>
 
           {/* ===== DESKTOP NAV ===== */}
-          <nav className="hidden md:flex gap-8">
+          <nav className="hidden md:flex gap-8 items-center">
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -43,17 +43,31 @@ export default function Header() {
                 {item.name}
               </a>
             ))}
+            <a
+              href="#auth"
+              className="text-white bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition font-medium"
+            >
+              Sign In
+            </a>
           </nav>
 
           {/* ===== MOBILE BUTTON ===== */}
-          <button
-            onClick={() => setIsOpen((prev) => !prev)}
-            className="md:hidden text-white text-2xl p-2"
-            aria-label="Toggle navigation menu"
-            type="button"
-          >
-            {isOpen ? "✕" : "☰"}
-          </button>
+          <div className="flex items-center gap-4 md:hidden">
+            <a
+              href="#auth"
+              className="text-white hover:text-red-500 transition font-medium text-sm"
+            >
+              Sign In
+            </a>
+            <button
+              onClick={() => setIsOpen((prev) => !prev)}
+              className="text-white text-2xl p-2"
+              aria-label="Toggle navigation menu"
+              type="button"
+            >
+              {isOpen ? "✕" : "☰"}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -74,6 +88,15 @@ export default function Header() {
                 {item.name}
               </a>
             ))}
+            <a
+              href="#auth"
+              onClick={() => {
+                setTimeout(() => setIsOpen(false), 120)
+              }}
+              className="block py-3 px-4 text-white text-lg hover:text-red-500 transition font-medium"
+            >
+              Sign In
+            </a>
           </div>
         </nav>
       )}
