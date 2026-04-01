@@ -63,7 +63,7 @@ export default function Footer() {
       whileInView="visible"
       viewport={{ once: true, margin: '-100px' }}
       variants={containerVariants}
-      className="bg-[#0a0d14] border-t border-white/10 py-16 px-4 md:px-8 lg:px-20"
+      className="mt-12 md:mt-16 bg-[#0a0d14] border-t border-white/10 py-16 px-4 md:px-8 lg:px-20"
     >
       <div className="max-w-7xl mx-auto">
         {/* Top Section: Logo and Description */}

@@ -34,19 +34,19 @@ export default function Auth() {
       <div className="flex-1 flex items-center justify-center px-4 py-8">
         <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-transparent to-black/50 blur-3xl pointer-events-none"></div>
         
-        <div className="relative bg-[#070a11]/90 backdrop-blur-lg border border-white/10 rounded-lg p-8 shadow-lg w-full max-w-md">
+        <div className="relative bg-[#070a11]/90 backdrop-blur-lg border border-white/10 rounded-lg p-8 shadow-lg w-full max-w-md animate-fade-up">
           <div className="absolute inset-0 -z-10 rounded-lg bg-gradient-to-br from-red-600/10 via-red-600/5 to-transparent blur-2xl" />
           
-          <h2 className="text-3xl font-bold !text-2xl mb-2 text-center">
+          <h2 className="text-3xl font-bold !text-2xl mb-2 text-center animate-fade-from-left">
             {isRegistering ? 'Create Account' : 'Sign In'}
           </h2>
-          <p className="text-white/60 text-center mb-8 text-sm !text-[#BE0101] font-bold">
+          <p className="text-white/60 text-center mb-8 text-sm !text-[#BE0101] font-bold animate-fade-from-left animation-delay-100">
             {isRegistering
               ? 'Join the 3T Warrior Program today'
               : 'Welcome back to your account'}
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-4 mt-6">
+          <form onSubmit={handleSubmit} className="space-y-4 mt-6 animate-fade-from-left animation-delay-200">
             {/* Email */}
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-white mb-2">

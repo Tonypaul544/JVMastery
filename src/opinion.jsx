@@ -13,7 +13,7 @@ export default function Opinion() {
   return (
     <div
       ref={ref}
-      className="flex flex-col gap-6 py-10 mx-auto px-4 sm:px-8 md:px-20 items-center justify-center bg-[#010101] rounded-2xl max-w-7xl w-full"
+      className="flex flex-col gap-6 py-10 mx-auto px-4 sm:px-8 md:px-20 items-center justify-center bg-[#0B111E] rounded-2xl max-w-7xl w-full"
     >
       {/* ===== HEADER ===== */}
 

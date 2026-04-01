@@ -128,3 +128,13 @@ code {
   background: var(--code-bg);
 }
 
+
+/* Mobile-only page background override */
+@media (max-width: 767px) {
+  html,
+  body,
+  #root,
+  main {
+    background-color: #fff !important;
+  }
+}
