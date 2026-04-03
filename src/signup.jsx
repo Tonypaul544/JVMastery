@@ -69,7 +69,7 @@ export default function Signup() {
           <div className="flex items-center justify-between">
             <a href="#/" className="flex items-center gap-2">
               <img src={JvLogo} alt="JV Mastery Logo" className="h-10 w-auto" />
-              <span className="font-bold text-xl">JV Mastery</span>
+              {/* <span className="font-bold text-xl">JV Mastery</span> */}
             </a>
             <a href="#/" className="text-sm font-medium hover:text-red-500 transition">
               Back to Home

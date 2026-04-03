@@ -86,7 +86,7 @@ export default function Footer() {
             <div className="flex gap-4 mt-6">
               {[
                 { name: 'gmail', url: 'mailto:coachjvmastery@gmail.com', icon: <SiGmail /> },
-                { name: 'instagram', url: 'https://www.instagram.com/coachjv_mastery', icon: <FaSquareInstagram /> },
+                // { name: 'instagram', url: 'https://www.instagram.com/coachjv_mastery', icon: <FaSquareInstagram /> },
                 { name: 'whatsapp', url: 'http://wa.me/17272030987', icon: <FaSquareWhatsapp /> }
               ].map((social) => (
                 <motion.a
