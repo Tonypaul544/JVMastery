@@ -18,15 +18,15 @@ export default function Footer() {
     //     { label: 'Phase 3', href: '#phase3' }
     //   ] 
     // },
-    { 
-      category: 'Learn', 
-      links: [
-        { label: 'Asset Protection', href: '#assetProtection' },
-        { label: 'Tax Mitigation', href: '#taxMitigation' },
-        { label: 'Staking Security', href: '#stakingSecurity' },
-        { label: 'Why Warrior', href: '#whywarrior' }
-      ] 
-    },
+    // { 
+    //   category: 'Learn', 
+    //   links: [
+    //     { label: 'Asset Protection', href: '#assetProtection' },
+    //     { label: 'Tax Mitigation', href: '#taxMitigation' },
+    //     { label: 'Staking Security', href: '#stakingSecurity' },
+    //     { label: 'Why Warrior', href: '#whywarrior' }
+    //   ] 
+    // },
     { 
       category: 'Support', 
       links: [
@@ -63,13 +63,13 @@ export default function Footer() {
       whileInView="visible"
       viewport={{ once: true, margin: '-100px' }}
       variants={containerVariants}
-      className="mt-12 md:mt-16 bg-[#0a0d14] border-t border-white/10 py-16 px-4 md:px-8 lg:px-20"
+      className="mt-12 md:mt-16 bg-red-500/5 border-t border-white/10 py-5 px-4 md:px-8 lg:px-10"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto bg-gray-900/50 rounded-lg p-8 w-full">
         {/* Top Section: Logo and Description */}
         <motion.div
           variants={itemVariants}
-          className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-50 mb-12 justify-between pb-12"
+          className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-50 mb-0 justify-between pb-8"
         >
           {/* Brand Section */}
           <div className="md:col-span-1">
@@ -83,7 +83,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed">
               Empowering financial warriors to achieve complete freedom through proven strategies and professional guidance.
             </p>
-            <div className="flex gap-4 mt-6">
+            <div className="flex gap-4 mt-10">
               {[
                 { name: 'gmail', url: 'mailto:coachjvmastery@gmail.com', icon: <SiGmail /> },
                 // { name: 'instagram', url: 'https://www.instagram.com/coachjv_mastery', icon: <FaSquareInstagram /> },

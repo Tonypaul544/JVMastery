@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from 'react'
 import { AuthContext } from './AuthContext'
 import JvLogo from './assets/jvlogo.png'
-import Footer from './footer'
+import DashboardFooter from './dashboardFooter'
 import Wallet from './Wallets'
 import Assets from './Assets'
 import AdminPanel from './AdminPanel'
@@ -205,7 +205,7 @@ export default function Dashboard() {
       )} */}
 
       
-      <Footer />
+      <DashboardFooter />
     </div>
   )
 }
