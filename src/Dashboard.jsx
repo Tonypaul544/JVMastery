@@ -129,17 +129,17 @@ function DashboardHome({ user }) {
         <div className="bg-[#070a11]/90 backdrop-blur-lg border border-white/10 rounded-lg p-8">
           {/* <h2 className="text-xl font-bold mb-6">Account Information</h2> */}
           <div className="space-y-4">
-            <div>
+            <div className=' border border-b-white/10 rounded-lg p-2'>
               <p className="text-white/60 text-sm">Name</p>
-              <p className="text-white font-medium">{user?.name}</p>
+              <p className="text-white font-medium !text-[#EF4444]">{user?.name}</p>
             </div>
-            <div>
+            <div className=' border border-b-white/10 rounded-lg p-2'>
               <p className="text-white/60 text-sm">Email</p>
-              <p className="text-white font-medium">{user?.email}</p>
+              <p className="text-white font-medium !text-[#EF4444]">{user?.email}</p>
             </div>
-            <div>
+            <div className=' border border-b-white/10 rounded-lg p-2'>
               <p className="text-white/60 text-sm">Account Created</p>
-              <p className="text-white font-medium">{new Date(user?.createdAt).toLocaleDateString()}</p>
+              <p className="text-white font-medium !text-[#EF4444]">{new Date(user?.createdAt).toLocaleDateString()}</p>
             </div>
           </div>
         </div>

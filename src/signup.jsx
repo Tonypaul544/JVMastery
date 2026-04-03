@@ -109,7 +109,7 @@ export default function Signup() {
                 onChange={(e) => setName(e.target.value)}
                 required
                 placeholder="John Doe"
-                className="w-full rounded-lg bg-gray-800/50 border border-gray-700 text-white placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
+                className="w-full rounded-lg bg-gray-800/50  border border-b-white/10 rounded-lg p-2 text-white placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
               />
             </div>
 
@@ -125,7 +125,7 @@ export default function Signup() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 placeholder="you@example.com"
-                className="w-full rounded-lg bg-gray-800/50 border border-gray-700 text-white placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
+                className="w-full rounded-lg bg-gray-800/50  border border-b-white/10 rounded-lg p-2 text-white placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
               />
             </div>
 
@@ -141,7 +141,7 @@ export default function Signup() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 placeholder="••••••••"
-                className="w-full rounded-lg bg-gray-800/50 border border-gray-700 text-white placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
+                className="w-full rounded-lg bg-gray-800/50  border border-b-white/10 rounded-lg p-2 text-white placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
               />
             </div>
 
@@ -157,7 +157,7 @@ export default function Signup() {
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 required
                 placeholder="••••••••"
-                className="w-full rounded-lg bg-gray-800/50 border border-gray-700 text-white placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
+                className="w-full rounded-lg bg-gray-800/50  border border-b-white/10 rounded-lg p-2 text-white placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
               />
             </div>
 

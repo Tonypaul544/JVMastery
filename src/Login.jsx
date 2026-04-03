@@ -37,7 +37,6 @@ export default function Login() {
           <div className="flex items-center justify-between">
             <a href="/" className="flex items-center gap-2">
               <img src={JvLogo} alt="JV Mastery Logo" className="h-10 w-auto" />
-              <span className="font-bold text-xl">JV Mastery</span>
             </a>
             <a href="/" className="text-sm font-medium hover:text-red-500 transition">
               Back to Home
@@ -77,7 +76,7 @@ export default function Login() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 placeholder="you@example.com"
-                className="w-full rounded-lg bg-gray-800/50 border border-gray-700 text-white placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
+                className="w-full rounded-lg bg-gray-800/50  border border-b-white/10 rounded-lg p-2 text-white placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
               />
             </div>
 
@@ -93,7 +92,7 @@ export default function Login() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 placeholder="••••••••"
-                className="w-full rounded-lg bg-gray-800/50 border border-gray-700 text-white placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
+                className="w-full rounded-lg bg-gray-800/50  border border-b-white/10 rounded-lg p-2 text-white placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
               />
             </div>
 
