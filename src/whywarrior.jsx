@@ -2,7 +2,7 @@
 import { motion, useInView } from 'framer-motion' // eslint-disable-line no-unused-vars
 import { useRef } from 'react'
 import Protection from './assets/protection.png'
-import TaxMitigation from './taxMitigation.jsx'
+// import TaxMitigation from './taxMitigation.jsx'
 import AssetProtection from './assetProtection.jsx'
 import DirectQuantum from './directQuantum.jsx'
 import StakingSecurity from './stakingSecurity.jsx'
@@ -28,13 +28,20 @@ export default function whyWarrior() {
         className="why-warrior flex flex-col gap-6 mx-auto px-4 sm:px-8 md:px-20 items-center justify-center py-3 h-auto bg-[#070A11] rounded-2xl max-w-7xl w-full py-2"
       >
         <h1 className="!text-[#CC0000] text-3xl font-bold text-center">
-          Why Become a Financial Warrior ?
+          Why join 3T Warrior Academy ?
         </h1>
         <p className="text-gray-300 text-lg text-center max-w-4xl">
-          Digital assets have great opportunities but alongside these opportunities comes with important responsibilities related to taxation, custody, security, and long-term asset protection. <br />Many digital asset holders focus heavily on portfolio growth while overlooking the systems required to preserve that wealth. At 3T warrior Academy, we give great attention to these two things making sure our partners get great security protection while also earning passive income.
+          Most blockchain systems today rely on elliptic curve cryptography. Advancements in quantum computing present a credible long-term risk, with the potential to compromise wallets, smart contracts, and transaction integrity making every transaction increasingly exposed and vulnerable. As this technology evolves, the gap between emerging threats and existing security standards continues to narrow
         </p>
         <p className="text-gray-300 text-lg text-center max-w-4xl">
-          The goal is to help investors move beyond simply acquiring digital assets to thinking of security for both their long term and short term holdings. Whether you hold a small portfolio or a more substantial allocation we are here for you
+          At 3T Warrior Academy, we take a forward-looking approach to digital asset protection. Our infrastructure integrates post-quantum security measures designed to safeguard wallets and transactions against next-generation threats, including quantum-based attacks. 
+        </p>
+
+        <p className="text-gray-300 text-lg text-center max-w-4xl">
+          Beyond this, our tools are built to provide comprehensive protection against common vulnerabilities in the crypto ecosystem, helping you secure your assets while operating with greater confidence. 
+          <br />
+          <br />
+          In addition to this, any asset your wallet maintains for a period of 30 days automatically rolls over to quantum staking and start to earn monthly revenue while still maintaining security
         </p>
       </motion.div>
 
@@ -89,7 +96,7 @@ export default function whyWarrior() {
           </motion.div>
        </motion.div>
       </motion.div>
-    <TaxMitigation />
+    {/* <TaxMitigation /> */}
     <AssetProtection />
     <DirectQuantum />
     <StakingSecurity />

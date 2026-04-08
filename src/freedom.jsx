@@ -13,7 +13,7 @@ export default function Freedom() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-xl font-bold text-center mt-10 !text-[#CC0000] max-sm:text-2xl!"
       >
-        Your journey to financial freedom starts here.
+        The future of wealth starts with security.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 20 }}
@@ -21,9 +21,9 @@ export default function Freedom() {
         transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         className="text-center mt-4 text-lg text-gray-300 max-w-4xl"
       >
-        Do you feel like you're constantly running in place, struggling to make progress in your personal or financial life? Are you overwhelmed by the lack of direction or unsure what steps to take to achieve 360° financial and life freedom?
+        Do you feel like you’re constantly running in place, struggling to make meaningful progress in your personal or financial life? Are you concerned about safeguarding your assets against evolving risks such as hacks, quantum computers threats and on-chain vulnerabilities?
         <br /><br />
-        You're not alone, and it's not your fault. Society has failed in teaching us the most fundamental life skills, especially financial literacy, and it was done intentionally. It's time to take control of your destiny and break the chains holding you back.
+        Welcome to 3T Warrior Academy - where security is the foundation, and sustainable revenue becomes a natural advantage.
       </motion.p>
     </div>
   )

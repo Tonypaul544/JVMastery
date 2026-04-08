@@ -96,7 +96,7 @@ export default function Opinion() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.9 }}
         >
-          What I found most valuable in the 3T Warrior Academy is I get to meet new friends all over this world. that have similar stories and was able to rise and not give up. 
+          I lost $150,000 to a hacker but I had my wallets under 3T warrior, took me just 3months to gety full asset back. I remain grateful to JV and his entire team 
         </motion.p>
 
       </motion.div>
@@ -157,7 +157,7 @@ export default function Opinion() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.9 }}
         >
-          The academy has shown us so much, to empower ourselves, think logically and grow into the people we always wanted to be. Strength comes from within. We are warriors! Thank you cjv and team, the work you are doing is changing lives!
+          I was among the victims of FTX crash in 2022, lost $1M because I left my funds in a centralised exchange. Decided to move to 3T quantum staking with my remaining assets and I have been feeding my family from monthly revenue since 2024
         </motion.p>
 
       </motion.div>
@@ -218,7 +218,7 @@ export default function Opinion() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.9 }}
         >
-          Joining the #3TWarriorAcademy and the 120 Day Challenge has been one of the best decisions I've made. CJV, I can't thank you enough for changing my life and being such an inspiration to all of us. 
+          I make up to $600 monthly from 3T quantum staking and still have my capital 100% in my wallet 
         </motion.p>
 
       </motion.div>
@@ -278,7 +278,7 @@ export default function Opinion() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.9 }}
         >
-          I wholeheartedly support this academy and am sharing it with those who are ready to explore a place of healing. You will change the world and make planet Earth a place of love and connection over the long term.
+          I doubted something like this existed till I met 3T. I'm all in and hope it stays forever, I don't chase get rich quick I'm OK with the monthly revenue knowing well it's all a bonus added to security guarantee and 100% asset maintenance
         </motion.p>
 
       </motion.div>
