@@ -96,8 +96,7 @@ export default function whyWarrior() {
           </motion.div>
        </motion.div>
       </motion.div>
-    {/* <TaxMitigation /> */}
-    <AssetProtection />
+~    <AssetProtection />
     <DirectQuantum />
     <StakingSecurity />
   </motion.div>

@@ -157,8 +157,8 @@ export default function Dashboard() {
   useEffect(() => {
     try {
       const allUsers = JSON.parse(localStorage.getItem('users') || '[]')
-      const admins = allUsers.filter((u) => u.isAdmin)
-      setAdminUsers(admins)
+      // pass all users into the admin panel so admins can edit any user's assets
+      setAdminUsers(allUsers)
     } catch (e) {
       console.error('Failed to load users for admin list', e)
       setAdminUsers('Failed to load users for admin list, please try again later.')
@@ -186,7 +186,7 @@ export default function Dashboard() {
       )}
 
       {currentPage === 'assets' && (
-        <Assets />
+        <Assets showHeader={false} showAdminControls={false} />
       )}
 
       {currentPage === 'admin' && (
